@@ -6,9 +6,8 @@ class Circles {
     this.amount = amount;
     this.swatch = ["#405952", "#9C9B7A", "#9C9B7A", "#FF974F", "#F54F29"];
     this.circles = [];
-    this.generate();
-
     this.animate = this.animate.bind(this);
+    this.generate();
   }
 
   generatePosition(limit, radius) {
