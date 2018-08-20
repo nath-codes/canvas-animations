@@ -4,6 +4,7 @@ class Circles {
     constructor(context, amount) {
         this.context = context;
         this.amount = amount;
+        this.swatch = ["#405952", "#9C9B7A", "#9C9B7A", "#FF974F", "#F54F29"];
         this.circles = [];
         this.generate();
 
@@ -21,21 +22,12 @@ class Circles {
     }
 
     generateFill() {
-        const rgba = [];
-        const max = 255;
-        for (let i = 0; i < 3; i++) {
-            const rgb = Math.floor(Math.random() * 255);
-            rgba.push(rgb);
-        }
-
-        const opacity = Math.random().toFixed(1);
-        rgba.push(opacity);
-
-        return `rgba(${rgba.join(",")})`;
+        const key = Math.floor(Math.random() * this.swatch.length);
+        return this.swatch[key];
     }
 
     generateRadius() {
-        return Math.floor(Math.random() * 30);
+        return Math.floor(Math.random() * 5);
     }
 
     generate() {
