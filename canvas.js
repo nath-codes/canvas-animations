@@ -1,4 +1,4 @@
-import Circles from "/Circles.js";
+import Circles from "./circles.js";
 
 const createCanvas = () => {
     const canvas = document.querySelector("canvas");
