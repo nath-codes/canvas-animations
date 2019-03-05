@@ -4,4 +4,4 @@ A little play around with the Canvas API. It's largely based on an excellent [Ch
 
 ## Demo
 
-You can view the animation [here](https://nath-codes.github.io/circle-canvas-animations).
+You can view the animation [here](https://nathan-kansu.github.io/circle-canvas-animations).
