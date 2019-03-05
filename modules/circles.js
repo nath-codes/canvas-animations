@@ -4,7 +4,7 @@ class Circles {
   constructor(context, amount) {
     this.context = context;
     this.amount = amount;
-    this.swatch = ["#405952", "#9C9B7A", "#9C9B7A", "#FF974F", "#F54F29"];
+    this.swatch = ["#405952", "grey", "#FF974F", "#F54F29"];
     this.circles = [];
     this.animate = this.animate.bind(this);
     this.generate();
@@ -26,7 +26,8 @@ class Circles {
   }
 
   generateRadius() {
-    return Math.floor(Math.random() * 5);
+    const radius = Math.floor(Math.random() * 5) * 2;
+    return radius;
   }
 
   generate() {
